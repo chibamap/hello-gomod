@@ -1,7 +1,7 @@
 .PHONY: clean build
 
 build:
-	cd ./hello/ && GOOS=linux GOARCH=amd64 go build
+	GOOS=linux GOARCH=amd64 go build -o bin/hello-gomod
 
 clean:
 	rm -rf ./hello/hello
